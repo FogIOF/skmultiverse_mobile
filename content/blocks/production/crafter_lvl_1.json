@@ -1,0 +1,111 @@
+{
+  "type": "multicraft.MultiCrafter",
+  "localizedName": "[#ff66]Крафтер 1ур.",
+  "description": "Крафтер способен создавать предметы, которые требуются для многих крафтов.",
+  "health": 500,
+  "itemCapacity": 50,
+  "size": 3,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "updateEffect": "fire",	
+  "menu": "Detailed",
+  "recipes": 
+  [
+	  {
+	    "input": {
+	      "power": 5,
+        "items": [
+          {"item": "copper", "amount": 3}
+	      ]
+	    },
+	    "output": {
+        "items": [
+          {"item": "scrap", "amount": 1}
+      ] 
+	    },
+	    "craftTime": 60
+    },
+	 	{
+	    "input": {
+	      "power": 5,
+        "items": [
+          {"item": "lead", "amount": 3}
+	      ]
+	    },
+	    "output": {
+        "items": [
+          {"item": "scrap", "amount": 1}
+        ]
+	    },
+	    "craftTime": 60
+    },
+	 	{
+	    "input": {
+	      "power": 5,
+        "items": [
+          {"item": "graphite", "amount": 3}
+	      ]
+	    },
+	    "output": {
+        "items": [
+          {"item": "scrap", "amount": 1}
+        ]
+	    },
+	    "craftTime": 60
+    },
+	 	{
+	    "input": {
+	      "power": 5,
+        "items": [
+          {"item": "titanium", "amount": 2}
+	      ]
+	    },
+	    "output": {
+        "items": [
+          {"item": "scrap", "amount": 1}
+        ]
+	    },
+	    "craftTime": 60
+    },
+	 	{
+	    "input": {
+	      "power": 5,
+        "items": [
+          {"item": "sand", "amount": 5}
+	      ]
+	    },
+	    "output": {
+        "items": [
+          {"item": "scrap", "amount": 1}
+        ]
+	    },
+	    "craftTime": 60
+    }
+ ],
+ "drawer": [
+    { 
+      "type": "DrawDefault" 
+    },
+    {
+      "type": "DrawFlame"
+    },
+    {
+      "type": "DrawRegion",
+      "suffix": "-top"
+    }
+  ],
+  "requirements": [
+	  {"item": "copper", "amount": 20},
+	  {"item": "lead", "amount": 10}
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "Core",
+    "requirements": [
+      {"item": "lead", "amount": 50},
+	    {"item": "copper", "amount": 25},
+      {"item": "graphite", "amount": 20}
+    ]
+  }
+}
